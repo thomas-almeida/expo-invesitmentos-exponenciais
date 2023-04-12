@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Crono - Invesitmentos Exponenciais</title>
+</head>
+
+<body>
+
+    <nav>
+        <b>crono</b>
+        <b id="duvidas" onclick="wpp()">?</b>
+    </nav>
+
+    <div class="container">
+        <div class="container-content">
+
+            <div>
+
+                <div id='homeDiv'>
+                    <h1>
+                        Investimentos baixos de retorno rápido para quem não tem meses de
+                        paciência
+                    </h1>
+
+                    <div class="social">
+                        <section class="profile">
+                            <img src="assets/img/profile-crono.jpg" id="profile" />
+                            <strong>Luana Silva</strong>
+                            <img src="assets/img/verification-badge.png" id="special" />
+                        </section>
+                        <p>
+                            Eu comecei com 30 reais e no fim do mês me rendeu 720! 😎, vou usar todo mês agora!
+                        </p>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="btnComecar" onclick="openPlanos()">
+                            <img src="assets/img/rocket.png" alt="" /> Comece Agora
+                        </button>
+                        <button id="btnWhatsapp">
+                            <img src="assets/img/whatsapp.webp" alt="" />
+                            <a href="https://wa.me/5511989599361?text=Crono:%20Ol%C3%A1%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os"
+                                target='_blank'>Whatsapp</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="planosDiv">
+
+                    <p class='bread'>Início / Planos</p>
+
+                    <h1>Um plano pensado para cada perfil investidor</h1>
+                    <button class="go-back" onclick="closePlanos()">Voltar</button>
+
+                    <div class="plan-container">
+
+                        <div class="social">
+                            <section class="profile">
+                                <strong class="plan-title">Crono Conservador</strong>
+                                <img src="assets/img/verification-badge.png" id="verified" />
+                            </section>
+                            <ul class="benefitList">
+                                <li>Comece com <b>R$ 30,00</b></li>
+                                <li>Retire até <b>R$ 700,00</b> todo o mês</li>
+                                <li>Suporte via <b>Whatsapp</b></li>
+                            </ul>
+                            <button class="btn-planos" id="btnComecar" onclick="openCheckout0()">
+                                Quero este plano
+                            </button>
+                        </div>
+
+                        <div class="social destaque-box">
+                            <b id="destaque-plano">O Mais Usado</b>
+                            <section class="profile">
+                                <strong class="plan-title" id='up'>Crono Moderado</strong>
+
+                                <img src="assets/img/verification-badge.png" id="verified" />
+                            </section>
+                            <ul class="benefitList">
+                                <li>Comece com <b>R$ 50,00</b></li>
+                                <li>Retire até <b>R$ 1.100,00</b> todo o mês</li>
+                                <li>Suporte via <b>Whatsapp</b></li>
+                            </ul>
+                            <button class="btn-planos" id="btnComecar" onclick="openCheckout1()">
+                                Quero o mais usado!
+                            </button>
+                        </div>
+
+                        <div class="social">
+                            <section class="profile">
+                                <strong class="plan-title">Crono Investidor</strong>
+                                <img src="assets/img/verification-badge.png" id="verified" />
+                            </section>
+                            <ul class="benefitList">
+                                <li>Comece com <b>R$ 90,00</b></li>
+                                <li>Retire até <b>R$ 2.000,00</b> todo o mês</li>
+                                <li>Suporte via <b>Whatsapp</b></li>
+                                <li>Saque quando quiser</li>
+                            </ul>
+                            <button class="btn-planos" id="btnComecar" onclick="openCheckout2()">
+                                Quero este plano
+                            </button>
+                        </div>
+
+                        <div class="social">
+                            <section class="profile">
+                                <strong class="plan-title">Crono Veterano</strong>
+                                <img src="assets/img/verification-badge.png" id="verified" />
+                            </section>
+                            <ul class="benefitList">
+                                <li>Comece com <b>R$ 120,00</b></li>
+                                <li>Retire até <b>R$ 2.500,00</b> todo o mês</li>
+                                <li>Suporte via <b>Whatsapp</b></li>
+                                <li>Saque quando quiser</li>
+                            </ul>
+                            <button class="btn-planos" id="btnComecar" onclick="openCheckout3()">
+                                Quero este plano
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="checkoutDiv">
+
+                    <p class='bread'>Início / Planos / Seu Plano</p>
+
+                    <h1>Beleza! agora é só confirmar a escolha e começar a lucrar</h1>
+                    <button class="go-back" onclick="closeCheckout()">Voltar</button>
+
+                    <p class="aviso first-aviso">Após confirmar as informações do plano, você será redirecionado
+                        para realizar o pagamento via Pix, mas antes, revise suas informações</p>
+
+                    <h3 id="aviso-big">Você está contratando</h3>
+
+                    <div class="actual-plan">
+                        <div>
+                            <b id="nomePlano"></b>
+                            <br />
+                            <br />
+                            <ul class="benefitList">
+                                <li id='start'>Comece com</li>
+                                <li id='retake'>Retire até</li>
+                                <li>Suporte via <b>Whatsapp</b></li>
+                                <li id='bonus'></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='centered'>
+                        <button id="enviarContato" onclick="openPix()">Confirmar e Seguir para o Pix</button>
+                    </div>
+
+                </div>
+
+                <div id="pixDiv">
+
+                    <p class='bread'>Início / Planos / Seu Plano / Pagamento</p>
+
+                    <h1>O primeiro passo para os resultados ideiais!</h1>
+                    <button class="go-back" onclick="closePix()">Voltar</button>
+
+                    <p class="aviso first-aviso">Após fazer o pagamento, entraremos em contato com você no mesmo
+                        instante, realize o Pix na plataforma <b class='warning'>LivePix</b> colocando seu <b
+                            class='warning'>Nome</b> e no campo <b class='warning'>Mensagem</b> o seu <b
+                            class='warning'>Whatsapp</b>, fazendo o Pix do valor do <b class='warning'>plano
+                            escolhido</b>.</p>
+
+                    <section id='qrcode-field'>
+                        <div>
+                            <img id='qrcode' src="assets/img/qrcode.png" alt="" />
+                        </div>
+                    </section>
+
+                    <p class='aviso'>Não esqueça de enviar seu <b class='warning'>Whatsapp</b> no campo <b
+                            class='warning'>MENSAGEM</b> e Colocar o <b class='warning'>VALOR DO PLANO
+                            ESCOLHIDO</b> quando realizar o Pix !</p>
+
+                    <button class="btn-planos margin-bt " id="btnComecar">
+                        <a href="https://livepix.gg/cronoinvest" class='pixbtn' target='_blank' id='white-link'>
+                            <p>Ir para o Pix ! </p>
+                            <img id='pix-safe' src="assets/img/verification-badge.png" alt="" />
+                        </a>
+
+                    </button>
+
+                    <p class="aviso first-aviso margin-tp">Enquanto espera nosso contato..</p>
+
+                    <div class="buttons">
+                        <button id="btnComecar" class='insta-btn'>
+                            <img src="assets/img/insta.png" alt="" />
+                            <a id='insta-white' target='_blank' href="https://www.instagram.com/crono_app/">Siga a Crono
+                                no Insta</a>
+                        </button>
+                        <button id="btnWhatsapp">
+                            <img src="assets/img/whatsapp.webp" alt="" />
+                            <a href="https://wa.me/5511989599361?text=Suporte%20Crono:%20Ol%C3%A1%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20servi%C3%A7o."
+                                target='_blank'>Tirar dúvidas no Whatsapp</a>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="js/index.js"></script>
+
+</html>

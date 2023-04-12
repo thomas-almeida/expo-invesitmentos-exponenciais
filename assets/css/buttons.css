@@ -1,0 +1,110 @@
+.buttons {
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.buttons img {
+  width: 27px;
+  height: 27px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+button a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+button img {
+  margin-right: 10px;
+}
+
+#btnComecar {
+  background-color: #5530de;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#btnWhatsapp {
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 5px;
+  color: #1c1c1c;
+}
+
+#white-link{
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+}
+
+#enviarContato{
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 95%;
+  text-align: center;
+  background-color: #5530de;
+  border: none;
+  color: #fff;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.go-back{
+  justify-content: flex-start;
+  background-color: transparent;
+  background: #fbfbfb;
+  border-radius: 19px;
+  border: 1px solid #d1d1d1;
+  width: 25%;
+  text-align: center;
+}
+
+.margin-bt{
+  margin-bottom: 40px;
+}
+
+#insta-white{
+  color: #fff;
+  font-weight: 500;
+}
+
+.insta-btn{
+  background-color: #1E1E1E !important;
+}
+
+.pixbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pixbtn img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+b#duvidas {
+  padding: 1px;
+  border: 1px dashed;
+  border-radius: 20px;
+  width: 25px;
+  text-align: center;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+
+}

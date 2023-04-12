@@ -1,0 +1,70 @@
+.social {
+  padding: 20px;
+  border: 1px solid #8282829f;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 4px #333;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#profile {
+  width: 37px;
+  height: 38px;
+  border-radius: 100px;
+  margin-right: 10px;
+  border: 1px solid #eee;
+}
+
+.social p {
+  padding: 20px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #383838;
+}
+
+#verified {
+  width: 16px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+
+.benefitList{
+  padding: 10px;
+  padding-left: 20px;
+}
+.benefitList li{
+  font-size: 16px;
+  padding: 5px 0px;
+  text-align: left;
+}
+
+.plan-title{
+font-size: 22px;
+}
+
+.btn-planos{
+ font-size: 18px;
+ padding: 13px 0px;
+}
+
+.warning{
+  color: #6F08F5;
+}
+
+#destaque-plano{
+  color: #6F08F5;
+}
+
+#up{
+  margin-top: 10px;
+}
+
+.destaque-box{
+  box-shadow: 1px 1px 16px #6F08F5 !important;
+}
