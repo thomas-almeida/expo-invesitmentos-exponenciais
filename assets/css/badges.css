@@ -1,0 +1,24 @@
+.badges{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 5px !important;
+    padding: 0 !important;
+}
+
+.badges span{
+    padding: 3px;
+    border: 1px solid #2c2c2c2c;
+    background-color: #cccccc1c;
+    margin: 5px;
+    margin-left: 0;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.full{
+    background-color: #0fe14bcb !important;
+}
