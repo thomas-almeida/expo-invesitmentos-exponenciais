@@ -1,0 +1,25 @@
+div#faq {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 2px 5px 14px #1d1d1d;
+}
+
+.faq-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 9px;
+    background: #000000b3;
+    height: 100vh;
+}
+
+.accordion {
+    padding: 8px;
+}
+
+.accordion p {
+    margin-top: 10px;
+}

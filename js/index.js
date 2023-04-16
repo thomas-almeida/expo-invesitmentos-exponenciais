@@ -3,6 +3,7 @@ var planosDiv = document.getElementById('planosDiv')
 var homeDiv = document.getElementById('homeDiv')
 var checkoutDiv = document.getElementById('checkoutDiv')
 var pixDiv = document.getElementById('pixDiv')
+var faqDiv = document.getElementById('faq-container')
 
 var plan = {
   name: ['Crono Conservador - R$ 30,00/Mês', 'Crono Moderado - R$ 50,00/Mês', 'Crono Investidor - R$ 90,00/Mês', 'Crono Veterano - R$ 120,00/Mês'],
@@ -129,6 +130,10 @@ function closePix() {
   checkoutDiv.style.display = 'block'
 }
 
-function wpp(){
-  window.location.href = 'https://wa.me/5511989599361?text=Crono:%20Ol%C3%A1%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os'
+function faq(){
+  faqDiv.style.display = 'flex'
+}
+
+function closeFaq(){
+  faqDiv.style.display = 'none'
 }
