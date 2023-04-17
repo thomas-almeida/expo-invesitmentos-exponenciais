@@ -1,4 +1,3 @@
-
 var planosDiv = document.getElementById('planosDiv')
 var homeDiv = document.getElementById('homeDiv')
 var checkoutDiv = document.getElementById('checkoutDiv')
@@ -130,10 +129,75 @@ function closePix() {
   checkoutDiv.style.display = 'block'
 }
 
-function faq(){
+function faq() {
   faqDiv.style.display = 'flex'
 }
 
-function closeFaq(){
+function closeFaq() {
   faqDiv.style.display = 'none'
+}
+
+var pointer0 = 0
+var pointer1 = 0
+var pointer2 = 0
+
+var accordion_0 = document.getElementById('acc-info-0')
+var accordion_1 = document.getElementById('acc-info-1')
+var accordion_2 = document.getElementById('acc-info-2')
+
+var accimg_0 = document.getElementById('acc-img-0')
+var accimg_1 = document.getElementById('acc-img-1')
+var accimg_2 = document.getElementById('acc-img-2')
+
+
+function accordion0() {
+  
+  accordion_1.style.display = 'none'
+  accordion_2.style.display = 'none'
+
+  if (pointer0 == 0) {
+    accordion_0.style.display = 'block'
+    pointer0 = 1
+    accimg_0.style.transform = 'rotate(180deg)'
+  } else {
+    accordion_0.style.display = 'none'
+    pointer0 = 0
+    accimg_0.style.transform = 'rotate(0deg)'
+  }
+
+
+}
+
+function accordion1() {
+
+  accordion_0.style.display = 'none'
+  accordion_2.style.display = 'none'
+
+  if (pointer1 == 0) {
+    accordion_1.style.display = 'block'
+    pointer1 = 1
+    accimg_1.style.transform = 'rotate(180deg)'
+  } else {
+    accordion_1.style.display = 'none'
+    pointer1 = 0
+    accimg_1.style.transform = 'rotate(0deg)'
+  }
+
+}
+
+function accordion2() {
+
+  accordion_1.style.display = 'none'
+  accordion_0.style.display = 'none'
+
+  if (pointer2 == 0) {
+    accordion_2.style.display = 'block'
+    pointer2 = 1
+    accimg_2.style.transform = 'rotate(180deg)'
+  } else {
+    accordion_2.style.display = 'none'
+    pointer2 = 0
+    accimg_2.style.transform = 'rotate(0deg)'
+  }
+
 }
