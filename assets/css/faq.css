@@ -24,6 +24,7 @@ div#faq {
     margin-bottom: 10px;
     border-radius: 6px;
     position: relative;
+    box-shadow: 1px 1px 3px #a3a3a333;
 }
 
 .accordion p {
