@@ -1,0 +1,26 @@
+[
+    {
+        "id":0,
+        "nome": "Thomas Almeida",
+        "mensalidade":"R$ 120,00",
+        "plano": "Crono Veterano",
+        "username":"thomasalmeida",
+        "password": "git@2023",
+        "since":"Membro desde: 01/01/2023",
+        "venc":"Prox. Saque em: 30/04/2023",
+        "img": "assets/img/customers/thom.png",
+        "saldo":"R$ 120,00"
+    },
+    {
+        "id":1,
+        "nome": "Luana Label",
+        "mensalidade":"R$ 30,00",
+        "plano": "Crono Conservador",
+        "username":"luanalabel",
+        "password": "cronoconservadorluana",
+        "since":"Membro desde: 18/04/2023",
+        "venc":"Prox. Saque em: 18/05/2023",
+        "img": "assets/img/customers/luana.png",
+        "saldo":"R$ 100,00"
+    }
+]

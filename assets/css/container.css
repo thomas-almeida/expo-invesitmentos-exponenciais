@@ -16,7 +16,8 @@ h1 {
 }
 
 div#homeDiv {
-  padding-top: 45px;
+
+  height: 80vh;
 }
 
 #planosDiv {
@@ -37,6 +38,45 @@ div#homeDiv {
   height: 75vh;
   display: none;
   background-color: #fff;
+}
+
+#loginDiv {
+  height: 75vh;
+  background-color: #fff;
+  display: none;
+}
+
+#clienteDiv {
+  height: 90vh;
+  background-color: #fff;
+  display: none;
+}
+
+#profile-nav{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#profile-nav section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#profile-nav img{
+  width: 32px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+#profile-nav button{
+  width: 70px;
+  border: 1px solid #6703e9;
+  background: #fff;
+  border-radius: 21px;
+  color: #6703e9;
+  font-weight: 500;
 }
 
 .plan-container {
@@ -75,6 +115,53 @@ div#homeDiv {
   margin-top: 30px;
 }
 
+.purple-subtitle {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #6703e9;
+}
+
+#clienteDiv>ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.client-tag {
+  padding: 5px;
+  background-color: #0c0c0c;
+  margin: 3px;
+  margin-left: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 10pt;
+}
+
+.crono-investidor {
+  background-color: #25d366 !important;
+  width: 130px;
+}
+
+.info {
+  background-color: #0c0c0c !important;
+  width: 200px;
+}
+
+.rendimentos {
+  padding: 10px;
+  border: 1px dashed #cacaca;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 4px 3px 3px #eee;
+  margin-bottom: 25px;
+}
+
+.rendimentos h1 {
+  font-size: 30px;
+  color: #0c0c0c;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
 .actual-plan {
   padding: 20px 10px;
@@ -109,12 +196,12 @@ input {
 }
 
 
-#qrcode{
+#qrcode {
   text-align: center;
   width: auto;
 }
 
-#qrcode-field{
+#qrcode-field {
   display: flex;
   justify-content: center;
 }
@@ -136,8 +223,12 @@ p.bread {
 }
 
 
-.centered{
+.centered {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+b#clientNome {
+  font-size: 15px;
 }

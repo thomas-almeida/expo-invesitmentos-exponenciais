@@ -40,6 +40,9 @@ div#faq {
 #acc-info-2{
     display: none;
 }
+#acc-info-3{
+    display: none;
+}
 
 .accordion img {
     width: 14px;

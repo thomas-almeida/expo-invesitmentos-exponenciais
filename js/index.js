@@ -3,6 +3,16 @@ var homeDiv = document.getElementById('homeDiv')
 var checkoutDiv = document.getElementById('checkoutDiv')
 var pixDiv = document.getElementById('pixDiv')
 var faqDiv = document.getElementById('faq-container')
+var loginDiv = document.getElementById('loginDiv')
+var clientDiv = document.getElementById('clienteDiv')
+
+var navbar = document.getElementById('navbar')
+var profile_navbar = document.getElementById('profile-nav')
+
+var input_username = document.getElementById('username_plataforma')
+var input_password = document.getElementById('password_plataforma')
+
+var loginMsg = document.getElementById('login-msg')
 
 var plan = {
   name: ['Crono Conservador - R$ 30,00/Mês', 'Crono Moderado - R$ 50,00/Mês', 'Crono Investidor - R$ 90,00/Mês', 'Crono Veterano - R$ 120,00/Mês'],
@@ -137,21 +147,101 @@ function closeFaq() {
   faqDiv.style.display = 'none'
 }
 
+
+function openLogin() {
+  loginDiv.style.display = 'block'
+  homeDiv.style.display = 'none'
+
+}
+
+function closeLogin() {
+  loginDiv.style.display = 'none'
+  homeDiv.style.display = 'block'
+
+}
+
+function openClient() {
+
+  var usernameTxt = input_username.value
+  var passwordTxt = input_password.value
+
+  fetch('./dados/clientes.json')
+    .then(response => response.json())
+    .then(data => {
+
+      for (var i = 0; i < data.length; i++) {
+        if (usernameTxt == data[i].username && passwordTxt == data[i].password) {
+          console.log(data[i].username)
+          console.log(data[i].password)
+
+          //abrir login após validação
+          clientDiv.style.display = 'block'
+          loginDiv.style.display = 'none'
+
+          navbar.style.display = 'none'
+          profile_navbar.style.display = 'flex'
+
+          //client div open
+          var clientNome = document.getElementById('clientNome')
+          var clientPlano = document.getElementById('clientPlano')
+          var clientMensalidade = document.getElementById('clientMensalidade')
+          var clientSince = document.getElementById('clientSince')
+          var clientVenc = document.getElementById('clientVenc')
+          var clientSaldo = document.getElementById('clientSaldo')
+          var clientImg = document.getElementById('clientImg')
+
+          clientNome.innerText = data[i].nome
+          clientPlano.innerText = data[i].plano
+          clientMensalidade.innerText = data[i].mensalidade
+          clientSince.innerText = data[i].since
+          clientVenc.innerText = data[i].venc
+          clientSaldo.innerText = data[i].saldo
+          clientImg.src = data[i].img
+
+
+        } else {
+          loginMsg.innerText = "Usuário Não encontrado!"
+          loginMsg.style.color = 'crimson'
+        }
+      }
+
+    }).catch(erro => {
+      console.error(erro);
+    })
+
+}
+
+function closeClient() {
+  
+  loginMsg.innerText = "Entre com nome de usuário e senha"
+  loginMsg.style.color = '#6703e9'
+
+  clientDiv.style.display = 'none'
+  loginDiv.style.display = 'block'
+
+  navbar.style.display = 'flex'
+  profile_navbar.style.display = 'none'
+  
+}
+
 var pointer0 = 0
 var pointer1 = 0
 var pointer2 = 0
+var pointer3 = 0
 
 var accordion_0 = document.getElementById('acc-info-0')
 var accordion_1 = document.getElementById('acc-info-1')
 var accordion_2 = document.getElementById('acc-info-2')
+var accordion_3 = document.getElementById('acc-info-3')
 
 var accimg_0 = document.getElementById('acc-img-0')
 var accimg_1 = document.getElementById('acc-img-1')
 var accimg_2 = document.getElementById('acc-img-2')
+var accimg_3 = document.getElementById('acc-img-3')
 
 
 function accordion0() {
-  
+
   accordion_1.style.display = 'none'
   accordion_2.style.display = 'none'
 
@@ -198,6 +288,24 @@ function accordion2() {
     accordion_2.style.display = 'none'
     pointer2 = 0
     accimg_2.style.transform = 'rotate(0deg)'
+  }
+
+}
+
+function accordion3() {
+
+  accordion_1.style.display = 'none'
+  accordion_0.style.display = 'none'
+  accordion_2.style.display = 'none'
+
+  if (pointer3 == 0) {
+    accordion_3.style.display = 'block'
+    pointer3 = 1
+    accimg_3.style.transform = 'rotate(180deg)'
+  } else {
+    accordion_3.style.display = 'none'
+    pointer3 = 0
+    accimg_3.style.transform = 'rotate(0deg)'
   }
 
 }

@@ -13,9 +13,17 @@
 
 <body>
 
-    <nav>
+    <nav id="navbar">
         <b>crono</b>
         <b id="duvidas" onclick="faq()">?</b>
+    </nav>
+
+    <nav id="profile-nav">
+        <section id="profile-info">
+            <img id="clientImg" src="assets/img/profile-crono.jpg" alt="">
+            <b id="clientNome"></b>
+        </section>
+        <button onclick="closeClient()">Sair</button>
     </nav>
 
     <div class="container">
@@ -43,6 +51,9 @@
                     <div class="buttons">
                         <button id="btnComecar" onclick="openPlanos()">
                             <img src="assets/img/rocket.png" alt="" /> Comece Agora
+                        </button>
+                        <button id="btnComecar" onclick="openLogin()">
+                            <img src="assets/img/client.png" alt="" /> Já Sou Cliente
                         </button>
                         <button id="btnWhatsapp">
                             <img src="assets/img/whatsapp.webp" alt="" />
@@ -229,40 +240,114 @@
 
                 </div>
 
+                <div id="loginDiv">
+                    <h1>Acesse seus Resultados Ideais</h1>
+                    <button class="go-back" onclick="closeLogin()">Voltar</button>
+                    <div class="accordion">
+                        <b onclick="accordion3()">Importante<img id="acc-img-3"
+                                src="assets/img/down-chevron-svgrepo-com.svg" alt=""></b>
+                        <section id="acc-info-3">
+                            <p class="aviso first-aviso">Caso tenha esquecido a senha é so entrar em contato com o
+                                suporte,
+                                lembre-se que o
+                                acesso só é dado quando você assina o plano, envia o pix e recebe o contato do suporte!
+                            </p>
+                        </section>
+                    </div>
+                    <h3 class="purple-subtitle" id="login-msg">Entre com nome de usuário e senha</h3>
+                    <div>
+                        <input id="username_plataforma" type="text" placeholder="Nome">
+                        <input id="password_plataforma" type="password" placeholder="Senha">
+                    </div>
+                    <div class="buttons">
+                        <button id="btnComecar" onclick="openClient()">
+                            <img src="assets/img/client.png" alt="" /> Acessar Plataforma
+                        </button>
+                        <button id="btnWhatsapp">
+                            <img src="assets/img/whatsapp.webp" alt="" />
+                            <a href="https://wa.me/5511989599361?text=Crono:%20Ol%C3%A1%20Esqueci%20Minha%20Senha%20"
+                                target='_blank'>Esqueci Minha Senha</a>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div id="clienteDiv">
+                    <h3 class="purple-subtitle">Informações da conta</h3>
+
+                    <ul>
+                        <li class="client-tag crono-investidor" id="clientPlano">Nome do Plano</li>
+                        <li class="client-tag info" id="clientSince">Membro desde 18/04/2023</li>
+                        <li class="client-tag info" id="clientVenc">Próx. Saque em 18/05/2023</li>
+                    </ul>
+
+                    <div class="rendimentos">
+                        <h3 class="purple-subtitle">Rendimentos</h3>
+                        <section>
+                            <p>Eram <B id="clientMensalidade"></b> e agora são</p>
+                            <h1 id="clientSaldo"></h1>
+                        </section>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="btnWhatsapp">
+                            <img src="assets/img/whatsapp.webp" alt="" />
+                            <a href="https://wa.me/5511989599361?text=Crono:%20Ol%C3%A1%20Esqueci%20Minha%20Senha%20"
+                                target='_blank'>Pedir o Saque</a>
+                        </button>
+                        <button id="btnWhatsapp">
+                            <img src="assets/img/whatsapp.webp" alt="" />
+                            <a href="https://wa.me/5511989599361?text=Crono:%20Ol%C3%A1%20Esqueci%20Minha%20Senha%20"
+                                target='_blank'>Falar com o Suporte</a>
+                        </button>
+                        <button id="btnComecar" onclick="openPlanos()">
+                            <img src="assets/img/share.png" alt="" /> Compartilhar a Crono
+                        </button>
+                    </div>
+
+
+                </div>
+
             </div>
-
-
         </div>
-    </div>
 
-    <div class="faq-container" id="faq-container">
-        <div id="faq">
-            <div class="accordion">
-                <b onclick="accordion0()">O dinheiro rende? <img id="acc-img-0" src="assets/img/down-chevron-svgrepo-com.svg" alt="" ></b>
-                <section id="acc-info-0">
-                    <p>Sim!, investimos seu dinheiro durante o mês para que ele consiga render nos 30 Dias corridos sem parar</p>
-                </section>
-            </div>
-            <div class="accordion">
-                <b onclick="accordion1()">Como vou receber? <img id="acc-img-1" src="assets/img/down-chevron-svgrepo-com.svg" alt="" ></b>
-                <section id="acc-info-1">
-                    <p>Mantemos nosso contato via Whatsapp e aqui pela plataforma, para realizar seus saques nós entramos em contato para informar o valor e enviar o pix assim que você nos retornar.</p>
-                </section>
-            </div>
-            <div class="accordion">
-                <b onclick="accordion2()">E se não render? <img id="acc-img-2" src="assets/img/down-chevron-svgrepo-com.svg" alt="" ></b>
-                <section id="acc-info-2">
-                    <p>Isso dificilmente acontece, mas se caso o dinheiro não render você nao perde nada e consegue retirar o valor mensal que assinou, seus valores estão guardados conosco e não são perdidos nas operações.</p>
-                </section>
-            </div>
+        <div class="faq-container" id="faq-container">
+            <div id="faq">
+                <div class="accordion">
+                    <b onclick="accordion0()">O dinheiro rende? <img id="acc-img-0"
+                            src="assets/img/down-chevron-svgrepo-com.svg" alt=""></b>
+                    <section id="acc-info-0">
+                        <p>Sim!, investimos seu dinheiro durante o mês para que ele consiga render nos 30 Dias corridos
+                            sem
+                            parar</p>
+                    </section>
+                </div>
+                <div class="accordion">
+                    <b onclick="accordion1()">Como vou receber? <img id="acc-img-1"
+                            src="assets/img/down-chevron-svgrepo-com.svg" alt=""></b>
+                    <section id="acc-info-1">
+                        <p>Mantemos nosso contato via Whatsapp e aqui pela plataforma, para realizar seus saques nós
+                            entramos em contato para informar o valor e enviar o pix assim que você nos retornar.</p>
+                    </section>
+                </div>
+                <div class="accordion">
+                    <b onclick="accordion2()">E se não render? <img id="acc-img-2"
+                            src="assets/img/down-chevron-svgrepo-com.svg" alt=""></b>
+                    <section id="acc-info-2">
+                        <p>Isso dificilmente acontece, mas se caso o dinheiro não render você nao perde nada e consegue
+                            retirar o valor mensal que assinou, seus valores estão guardados conosco e não são perdidos
+                            nas
+                            operações.</p>
+                    </section>
+                </div>
 
-            <div>
-                <button id="btnComecar" onclick="closeFaq()">
-                    Entendi
-                </button>
+                <div>
+                    <button id="btnComecar" onclick="closeFaq()">
+                        Entendi
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
 
 
