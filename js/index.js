@@ -15,7 +15,7 @@ var input_password = document.getElementById('password_plataforma')
 var loginMsg = document.getElementById('login-msg')
 
 var plan = {
-  name: ['Crono Conservador - R$ 30,00/Mês', 'Crono Moderado - R$ 50,00/Mês', 'Crono Investidor - R$ 90,00/Mês', 'Crono Veterano - R$ 120,00/Mês'],
+  name: ['expo Conservador - R$ 30,00/Mês', 'expo Moderado - R$ 50,00/Mês', 'expo Investidor - R$ 90,00/Mês', 'expo Veterano - R$ 120,00/Mês'],
   month: ['Comece com R$ 30,00', 'Comece com R$ 50,00', 'Comece com R$ 90,00', 'Comece com R$ 120,00'],
   retake: ['Retire até R$ 700,00 todo o mês', 'Retire até R$ 1.100,00 todo o mês', 'Retire até R$ 2.000,00 todo o mes', 'Retire até R$ 2.500,00 todo o mês'],
   bonus: ['Saque no fim do mês', 'Saque fim do mês', 'Saque quando quiser', 'Saque quando quiser']
