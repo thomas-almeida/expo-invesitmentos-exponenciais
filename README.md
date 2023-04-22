@@ -1,4 +1,4 @@
-# expo-invesitmentos-exponenciais
+# EXPO
 Landing page da Expo, produto focado em alavancar o dinheiro das pessoas que não entendem de investimentos
 
 <h1>📄Proposta</h1>
