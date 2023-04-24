@@ -17,25 +17,25 @@ Todas as atualizações semanais e mensais de rendimento e renovação serão en
 <h3>🟣 Expo Conservador<h3>
 <p>Um plano acessível, barato e que devolve mais que o triplo do valor aplicado!, o plano CC tem um valor semanal de **R$30,00**, ideal para quem não tem tanta confiança em investimentos, ou é iniciante no ramo de investir o próprio dinheiro.
 
-<b>Valor Mensal: R$30,00 | Retorno: Até R$ 250,00</b>
+<b>Valor Mensal: R$32,00 | Retorno: Até R$ 165,00</b>
 </p>
 
 <h3>🟣 Expo Parceiro<h3>
 <p>Um plano acessível, de nível médio mas ainda barato e que devolve mais que o triplo do valor aplicado!, o plano CM tem um valor semanal de R$50,00, ideal para quem não tem tanta confiança em investimentos, mas tem um pouco mais de valor para aplicar o próprio dinheiro.
 
-<b>Valor Mensal: R$50,00 | Retorno: Até R$ 400,00</b>
+<b>Valor Mensal: R$50,00 | Retorno: Até R$ 300,00</b>
 </p>
 
 <h3>🟣 Expo Investidor<h3>
 <p>Um plano para entusiastas!, pessoas que tem maior confiança em investir pois sabem que terão aquele retorno de forma constante e muito bem entregue, o plano C Investidor tem um valor semanal de R$ 90,00 ainda para investidores acostumados é um valor super em conta e com retornos acima da média do mercado.
 
-<b>Valor Mensal: R$90,00 | Retorno: Até R$ 700,00</b>
+<b>Valor Mensal: R$90,00 | Retorno: Até R$ 490,00</b>
 </p>
 
 <h3>🟣 Expo Acionista<h3>
 <p>Um plano para quem já investe, um plano para quem tem uma boa quantia para aplicar, pessoas que tem a certeza que investir esse valor vai proporcionar muito mais e que vai agregar de forma incrivel e surpreendente na vida financeira dos seus investimentos pois o retorno é alto em um custo super abaixo da média de grandes serviços, o plano C Veterano tem um valor semanal de R$ 120,00, para investidores acostumados com retornos acima da média do mercado pois sabem que a expo não tem concorrência.
 
-<b>Valor Mensal: R$120,00 | Retorno: Até R$ 1.000,00</b>
+<b>Valor Mensal: R$120,00 | Retorno: Até R$ 660,00</b>
 </p>
 
 
